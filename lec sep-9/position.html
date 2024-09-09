@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main {
+            border: 2px solid red;
+            height: 90vh;
+            width: 90vw;
+        }
+
+        .container {
+            border: 2px solid green;
+            height: 70%;
+            width: 70%;
+            margin: 30px;
+        }
+        .item{
+            border: 2px solid blueviolet;
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+        }
+        #item2{
+            /* position: relative;q
+            left: 120px;
+            top: -100px; */
+            position: absolute;
+            left: 120px;
+        }
+        #item3{
+            position: fixed;
+            /* left: 120px; */
+            top: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div id="item1" class="item">item1</div>
+            <div id="item2" class="item">item2</div>
+            <div id="item3" class="item">item3</div>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>
